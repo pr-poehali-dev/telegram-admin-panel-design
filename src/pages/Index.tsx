@@ -4,6 +4,7 @@ import DashboardStats from "@/components/DashboardStats";
 import TicketsTable from "@/components/TicketsTable";
 import ActivityChart from "@/components/ActivityChart";
 import IntegrationsPanel from "@/components/IntegrationsPanel";
+import BroadcastPanel from "@/components/BroadcastPanel";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("dashboard");
@@ -23,6 +24,8 @@ const Index = () => {
         );
       case "tickets":
         return <TicketsTable />;
+      case "broadcasts":
+        return <BroadcastPanel />;
       case "integrations":
         return <IntegrationsPanel />;
       default:
@@ -54,6 +57,7 @@ const Index = () => {
                 {activeSection === "dashboard" && "Дашборд"}
                 {activeSection === "tickets" && "Заявки"}
                 {activeSection === "support" && "Поддержка"}
+                {activeSection === "broadcasts" && "Рассылки"}
                 {activeSection === "integrations" && "Интеграции"}
                 {activeSection === "analytics" && "Аналитика"}
               </h1>

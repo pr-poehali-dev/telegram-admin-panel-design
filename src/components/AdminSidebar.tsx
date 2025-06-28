@@ -14,6 +14,7 @@ const AdminSidebar = ({
     { id: "dashboard", label: "Дашборд", icon: "LayoutDashboard" },
     { id: "tickets", label: "Заявки", icon: "Ticket" },
     { id: "support", label: "Поддержка", icon: "MessageCircle" },
+    { id: "broadcasts", label: "Рассылки", icon: "Send" },
     { id: "integrations", label: "Интеграции", icon: "Plug" },
     { id: "analytics", label: "Аналитика", icon: "BarChart3" },
   ];
